@@ -1,34 +1,49 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/images/leaf.svg" />
-    <link rel="stylesheet" href="/src/styles/style.css">
-    <link rel="stylesheet" href="/src/styles/normalize.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ekohrdinové</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/images/leaf.svg" />
+  <link rel="stylesheet" href="/src/styles/style.css">
+  <link rel="stylesheet" href="/src/styles/normalize.css">
+  <link rel="stylesheet" href="/src/styles/hamburger.css">
+  <link rel="stylesheet" href="/src/styles/typography.css">
+  <script src="/src/scripts"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ekohrdinové</title>
+</head>
+
+<body>
+  <header>
     <div class="page">
       <div class="header">
         <img class="header__logo" src="/images/leaf.svg" alt="logo" />
         <h1 class="header__title">Ekohrdinové</h1>
-        <div class="header__hamburger"></div>
+        <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone" role="button"
+          aria-label="menu toggle"></a>
       </div>
-      <header>
-        <h1>Example page</h1>
-      </header>
-      <main>
-        <p>This is an example page.</p>
-        <p>It uses Vite for development.</p>
-        <p>It uses Pug for templating.</p>
-        <p>It uses Sass for styling.</p>
-        <p>It uses TypeScript for scripting.</p>
-      </main>
-      <footer>
-        <p>2023 Example Company</p>
-      </footer>
-    </div>
-    <script type="module" src="/src/scripts/main.js"></script>
-  </body>
+    </header>
+    <main>
+      <div class="obrazek">
+        <img class="nevim" src="/images/ruka.jpg" alt="ruka" />
+        <div class="stred">Staň se ekohrdinou!</div>
+      </div>
+      <div class="text">
+        <p>Malými každodenními rozhodnutími měníme svět. Třídění odpadu, šetření vodou nebo výsadba stromků – i ty můžeš
+          pomoct.</p>
+      </div>
+      <div class="button--hlavni">
+        <div class="button">
+        <a href="/src/pages/formular.html">Zapoj se!</a>
+        </div>
+      </div>
+      
+    </main>
+    <footer>
+      <p>2025 jaaajj</p>
+    </footer>
+  </div>
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+
 </html>
