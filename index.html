@@ -2,13 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/images/leaf.svg" />
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="stylesheet" href="/src/styles/normalize.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Example page</title>
+    <title>Ekohrdinové</title>
   </head>
   <body>
-    <h1>Hello example page</h1>
-    <p><a href="/onas.html"></a></p>
-    <script type="module" src="/src/main.js"></script>
+    <div class="page">
+      <div class="header">
+        <img class="header__logo" src="/images/leaf.svg" alt="logo" />
+        <h1 class="header__title">Ekohrdinové</h1>
+        <div class="header__hamburger"></div>
+      </div>
+      <header>
+        <h1>Example page</h1>
+      </header>
+      <main>
+        <p>This is an example page.</p>
+        <p>It uses Vite for development.</p>
+        <p>It uses Pug for templating.</p>
+        <p>It uses Sass for styling.</p>
+        <p>It uses TypeScript for scripting.</p>
+      </main>
+      <footer>
+        <p>2023 Example Company</p>
+      </footer>
+    </div>
+    <script type="module" src="/src/scripts/main.js"></script>
   </body>
 </html>
