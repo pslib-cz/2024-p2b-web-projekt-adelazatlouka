@@ -1,34 +1,6 @@
 @import "normalize.css";
 @import "typography.css";
 
-/* :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
-
-/* 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
 :root {
   font-family: Inter;
   color-scheme: light dark;
@@ -38,17 +10,7 @@
 
 
 
-/* .page{
-  display: grid;
-  grid-template-areas:
-        "header"
-        "main"
-        "footer";
-  gap: var(--gap);
-} */
-
 .header{
-  grid-area: header;
   display: flex;
   padding: 1em;
   justify-content: space-between;
@@ -63,7 +25,7 @@
   color: #146219;
 }
 
-.obrazek{
+.obrazekatext{
   position: relative;
   text-align: center;
 }
@@ -75,7 +37,7 @@
   transform: translate(-50%, -50%);
   color: white;
 }
-.nevim{
+.obrazek{
   width: 100%;
   height: auto;
 }
@@ -102,3 +64,22 @@
   display: flex;
   justify-content: center;
 }
+
+
+
+
+
+
+
+
+.konec{
+  background-color: var(--secondary);
+  padding: .25em;
+  margin: 0;
+  text-align: center;
+}
+
+
+
+
+
