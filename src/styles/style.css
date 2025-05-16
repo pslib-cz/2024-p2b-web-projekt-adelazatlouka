@@ -67,10 +67,23 @@
 
 
 
+.textm{
+  color: #146219;
+  text-align: center;
+  font-size: 2rem;
+}
 
+.ramecek{
+display: flex;
+background-color: var(--secondary);
+margin: 1em;
+border-radius: 2rem;
+}
 
+.obrazekprace{
 
-
+  border-radius: rem;
+}
 
 .konec{
   background-color: var(--secondary);
