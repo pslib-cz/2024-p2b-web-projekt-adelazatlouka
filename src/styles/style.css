@@ -23,7 +23,16 @@
   height: 3.375rem;
   flex-shrink: 0;
   color: #146219;
+  margin: .5em;
 }
+
+.header__title{
+  font-size: 1.25rem;
+  color: #000000;
+  margin: 0;
+}
+
+
 
 .obrazekatext{
   position: relative;
@@ -40,6 +49,7 @@
 .obrazek{
   width: 100%;
   height: auto;
+  z-index: 1;
 }
 
 .text{
@@ -63,8 +73,8 @@
 .button--hlavni{
   display: flex;
   justify-content: center;
+  
 }
-
 
 
 .textm{
@@ -81,8 +91,104 @@ border-radius: 2rem;
 }
 
 .obrazekprace{
+  width: 10.75rem;
+  height: 10.75rem;         
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0.75em;
+  flex-shrink: 0;  
+}
 
-  border-radius: rem;
+.obrazekprace img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  object-position: left; 
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+}
+
+.misto{
+  text-align: center;
+  font-size: 1.125rem;
+  width: 8.5rem;
+  color: black;
+}
+
+.datum{
+  display: flex;
+  color: #838383;
+  text-align: center;
+  justify-content: center;
+}
+.datum p{
+  margin: 0;
+}
+
+.kalendar{
+  width: 1.02756rem;
+}
+
+.odkaz{
+  color: var(--primary);
+}
+
+.formular{
+  background-color: var(--secondary);
+  margin: 1em;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 4em 1.5em;
+  gap: 3em;
+  margin: 3em 1em;
+}
+
+.tabulka{
+  border-radius: 1rem;
+  border: 1px solid var(--primary);
+  color: rgb(167, 167, 167);
+  padding: .75em;
+  margin: 0;
+}
+
+.skupina{
+  margin: 0;
+}
+.velke{
+  color: var(--primary);
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+}
+
+.male{
+  font-size: 0.875rem;
+  margin: .25em;
+}
+
+.posledni{
+  border-radius: 1rem;
+  border: 1px solid var(--primary);
+  color: rgb(167, 167, 167);
+  padding: .75em;
+  padding-bottom: 4em;
+  margin: 0;
+}
+
+
+.button--formular{
+  text-align: center;
+  background-color: var(--primary);
+  color: white;
+  padding: .75em;
+  border-radius: 1em;
+  margin: 1.5em 0;
 }
 
 .konec{
@@ -90,6 +196,7 @@ border-radius: 2rem;
   padding: .25em;
   margin: 0;
   text-align: center;
+  color: black;
 }
 
 

@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/images/leaf.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/src/styles/style.css">
   <link rel="stylesheet" href="/src/styles/normalize.css">
   <link rel="stylesheet" href="/src/styles/hamburger.css">
@@ -15,50 +16,77 @@
 
 <body>
   <header>
-    <div class="page">
-      <div class="header">
-        <img class="header__logo" src="/images/leaf.svg" alt="logo" />
-        <h1 class="header__title">Ekohrdinové</h1>
-        <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone" role="button"
-          aria-label="menu toggle"></a>
-      </div>
+      <section class="top-nav">
+        <div>
+          <img class="header__logo" src="/images/leaf.svg" alt="logo" />
+        </div>
+        <div>
+          <h1 class="header__title">Ekohrdinové</h1>
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+        <ul class="menu">
+          <li>O nás</li>
+          <li>Galerie</li>
+          <li>Formulář</li>
+        </ul>
+      </section>
     </header>
-    <main>
-      <div class="obrazekatext">
-        <img class="obrazek" src="%BASE_URL%images/ruka.webp" alt="ruka" />
-        <div class="stred">Staň se ekohrdinou!</div>
+  <main>
+    <div class="obrazekatext">
+      <img class="obrazek" src="%BASE_URL%images/ruka.webp" alt="ruka" />
+      <div class="stred">Staň se ekohrdinou!</div>
+    </div>
+    <div class="text">
+      <p>Malými každodenními rozhodnutími měníme svět. Třídění odpadu, šetření vodou nebo výsadba stromků – i ty můžeš
+        pomoct.</p>
+    </div>
+    <div class="button--hlavni">
+      <div class="button">
+        <a href="/src/pages/formular.html">Zapoj se!</a>
+      </div>
+    </div>
+    <div class="carka">
+    </div>
+    <div class="textm">
+      <p>Co právě děláme?</p>
+    </div>
+    <div class="ramecek">
+      <div class="obrazekprace">
+        <img src="%BASE_URL%images/sazeni.webp" alt="sazeni stromu" />
       </div>
       <div class="text">
-        <p>Malými každodenními rozhodnutími měníme svět. Třídění odpadu, šetření vodou nebo výsadba stromků – i ty můžeš
-          pomoct.</p>
+        <p class="misto">Výsadba ovocných stromků v Brně</p>
+        <a class="odkaz" href="#">zjistit více</p>
+          <div class="datum">
+            <img class="kalendar" src="%BASE_URL%images/calendar-o.svg" alt="kalendar" />
+            <p>11.2. 2025</p>
+          </div>
       </div>
-      <div class="button--hlavni">
-        <div class="button">
-        <a href="/src/pages/formular.html">Zapoj se!</a>
-        </div>
+    </div>
+    <div class="ramecek">
+      <div class="obrazekprace">
+        <img src="%BASE_URL%images/uklid.webp" alt="úklid odpadků" />
       </div>
-      <div class="carka">
+      <div class="text">
+        <p class="misto">Úklid parku v Jablonci nad Nisou</p>
+        <a class="odkaz" href="#">zjistit více</p>
+          <div class="datum">
+            <img class="kalendar" src="%BASE_URL%images/calendar-o.svg" alt="kalendar" />
+            <p>23.8. 2024</p>
+          </div>
       </div>
-      <div class="textm">
-        <p>Co právě děláme?</p>
-      </div>
-      <div class="ramecek">
-        <div class="obrazekprace">
-           <img class="obrazek" src="%BASE_URL%images/sazeni.webp" alt="sazeni stromu" />
-        </div>
-        <div class="text">
-          <p>Vysazujeme stromy</p>
-          <p>Vysazujeme stromy v okolí Brna a pomáháme tak přírodě.</p> 
-          <p>Vysazujeme stromy v okolí Brna a pomáháme tak přírodě.</p>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div class="konec">
-        <p>@2025 Zatloukalová adéla</p>
-      </div>
-    </footer>
+    </div>
+  </main>
+  <footer>
+    <div class="konec">
+      <p>@2025 Zatloukalová adéla</p>
+    </div>
+  </footer>
   </div>
+  <script type="module" src="/src/scripts/hamburger.js"></script>
   <script type="module" src="/src/scripts/main.js"></script>
 </body>
 
