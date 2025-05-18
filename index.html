@@ -3,48 +3,91 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/2024-p2b-web-projekt-adelazatlouka/images/leaf.svg" />
+  <link rel="icon" type="image/svg+xml" href="/2024-p2b-web-projekt-adelazatlouka/images/leaf.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="/src/scripts"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ekohrdinové</title>
-  <script type="module" crossorigin src="/2024-p2b-web-projekt-adelazatlouka/assets/index-X0LyIP1Q.js"></script>
-  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-adelazatlouka/assets/index-BL1zCvmb.css">
+  <script type="module" crossorigin src="/2024-p2b-web-projekt-adelazatlouka/assets/index-DHecxqs4.js"></script>
+  <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-adelazatlouka/assets/index-DeHX4SPs.css">
 </head>
 
 <body>
   <header>
-    <div class="page">
-      <div class="header">
+    <section class="top-nav">
+      <div>
         <img class="header__logo" src="/2024-p2b-web-projekt-adelazatlouka/images/leaf.svg" alt="logo" />
+      </div>
+      <div>
         <h1 class="header__title">Ekohrdinové</h1>
-        <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone" role="button"
-          aria-label="menu toggle"></a>
       </div>
-    </header>
-    <main>
-      <div class="obrazekatext">
-        <img class="obrazek" src="/2024-p2b-web-projekt-adelazatlouka/assets/ruka-D3glncVe.webp" alt="ruka" />
-        <div class="stred">Staň se ekohrdinou!</div>
-      </div>
-      <div class="text">
-        <p>Malými každodenními rozhodnutími měníme svět. Třídění odpadu, šetření vodou nebo výsadba stromků – i ty můžeš
-          pomoct.</p>
-      </div>
-      <div class="button--hlavni">
-        <div class="button">
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li><a href="/src/pages/index.html">O nás</a></li>
+        <li><a href="/src/pages/galerie.html">Galerie</a></li>
+        <li><a href="/src/pages/formular.html">Formulář</a></li>
+      </ul>
+    </section>
+  </header>
+  <main>
+    <div class="obrazekatext">
+      <img class="obrazek" src="/2024-p2b-web-projekt-adelazatlouka/images/rukaa.webp" alt="ruka" />
+      <div class="stred">Staň se ekohrdinou!</div>
+    </div>
+    <div class="text">
+      <p>Malými každodenními rozhodnutími měníme svět. Třídění odpadu, šetření vodou nebo výsadba stromků – i ty můžeš
+        pomoct.</p>
+    </div>
+    <div class="button--hlavni">
+      <div class="button">
         <a href="/src/pages/formular.html">Zapoj se!</a>
+      </div>
+    </div>
+    <div class="carka">
+    </div>
+    <div class="textm">
+      <p>Co právě děláme?</p>
+    </div>
+    <div class="ramecky">
+      <div class="ramecek">
+        <div class="obrazekprace">
+          <img src="/2024-p2b-web-projekt-adelazatlouka/images/sazeni.webp" alt="sazeni stromu" />
+        </div>
+        <div class="text">
+          <p class="misto">Výsadba ovocných stromků v Brně</p>
+          <a class="odkaz" href="#">zjistit více</p>
+            <div class="datum">
+              <img class="kalendar" src="/2024-p2b-web-projekt-adelazatlouka/images/calendar-o.svg" alt="kalendar" />
+             <p>11.2. 2025</p>
+          </div>
         </div>
       </div>
-      
-    </main>
-    <footer>
-      <div class="konec">
-        <img class="obrazek" src="/2024-p2b-web-projekt-adelazatlouka/assets/ruka-D3glncVe.webp" alt="ruka" />
-        <img class="obrazek" src="/2024-p2b-web-projekt-adelazatlouka/images/ruka.webp" alt="ruka" />
-        <p>@2025 Zatloukalová adéla</p>
+      <div class="ramecek">
+        <div class="obrazekprace">
+          <img src="/2024-p2b-web-projekt-adelazatlouka/images/uklid.webp" alt="úklid odpadků" />
+        </div>
+        <div class="text">
+          <p class="misto">Úklid parku v Jablonci nad Nisou</p>
+          <a class="odkaz" href="#">zjistit více</p>
+            <div class="datum">
+              <img class="kalendar" src="/2024-p2b-web-projekt-adelazatlouka/images/calendar-o.svg" alt="kalendar" />
+              <p>23.8. 2024</p>
+            </div>
+        </div>
       </div>
-    </footer>
-  </div>
+    </div>
+
+
+  </main>
+  <footer>
+    <div class="konec">
+      <p>@2025 Zatloukalová adéla</p>
+    </div>
+  </footer>
+  </div>
 </body>
 
 </html>
