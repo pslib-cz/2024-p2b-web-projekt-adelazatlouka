@@ -16,27 +16,27 @@
 
 <body>
   <header>
-      <section class="top-nav">
-        <div>
-          <img class="header__logo" src="/images/leaf.svg" alt="logo" />
-        </div>
-        <div>
-          <h1 class="header__title">Ekohrdinové</h1>
-        </div>
-        <input id="menu-toggle" type="checkbox" />
-        <label class='menu-button-container' for="menu-toggle">
+    <section class="top-nav">
+      <div>
+        <img class="header__logo" src="/images/leaf.svg" alt="logo" />
+      </div>
+      <div>
+        <h1 class="header__title">Ekohrdinové</h1>
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
         <div class='menu-button'></div>
       </label>
-        <ul class="menu">
-          <li>O nás</li>
-          <li>Galerie</li>
-          <li>Formulář</li>
-        </ul>
-      </section>
-    </header>
+      <ul class="menu">
+        <li><a href="/src/pages/index.html">O nás</a></li>
+        <li><a href="/src/pages/galerie.html">Galerie</a></li>
+        <li><a href="/src/pages/formular.html">Formulář</a></li>
+      </ul>
+    </section>
+  </header>
   <main>
     <div class="obrazekatext">
-      <img class="obrazek" src="%BASE_URL%images/ruka.webp" alt="ruka" />
+      <img class="obrazek" src="%BASE_URL%images/rukaa.webp" alt="ruka" />
       <div class="stred">Staň se ekohrdinou!</div>
     </div>
     <div class="text">
@@ -53,32 +53,36 @@
     <div class="textm">
       <p>Co právě děláme?</p>
     </div>
-    <div class="ramecek">
-      <div class="obrazekprace">
-        <img src="%BASE_URL%images/sazeni.webp" alt="sazeni stromu" />
-      </div>
-      <div class="text">
-        <p class="misto">Výsadba ovocných stromků v Brně</p>
-        <a class="odkaz" href="#">zjistit více</p>
-          <div class="datum">
-            <img class="kalendar" src="%BASE_URL%images/calendar-o.svg" alt="kalendar" />
-            <p>11.2. 2025</p>
+    <div class="ramecky">
+      <div class="ramecek">
+        <div class="obrazekprace">
+          <img src="%BASE_URL%images/sazeni.webp" alt="sazeni stromu" />
+        </div>
+        <div class="text">
+          <p class="misto">Výsadba ovocných stromků v Brně</p>
+          <a class="odkaz" href="#">zjistit více</p>
+            <div class="datum">
+              <img class="kalendar" src="%BASE_URL%images/calendar-o.svg" alt="kalendar" />
+             <p>11.2. 2025</p>
           </div>
+        </div>
+      </div>
+      <div class="ramecek">
+        <div class="obrazekprace">
+          <img src="%BASE_URL%images/uklid.webp" alt="úklid odpadků" />
+        </div>
+        <div class="text">
+          <p class="misto">Úklid parku v Jablonci nad Nisou</p>
+          <a class="odkaz" href="#">zjistit více</p>
+            <div class="datum">
+              <img class="kalendar" src="%BASE_URL%images/calendar-o.svg" alt="kalendar" />
+              <p>23.8. 2024</p>
+            </div>
+        </div>
       </div>
     </div>
-    <div class="ramecek">
-      <div class="obrazekprace">
-        <img src="%BASE_URL%images/uklid.webp" alt="úklid odpadků" />
-      </div>
-      <div class="text">
-        <p class="misto">Úklid parku v Jablonci nad Nisou</p>
-        <a class="odkaz" href="#">zjistit více</p>
-          <div class="datum">
-            <img class="kalendar" src="%BASE_URL%images/calendar-o.svg" alt="kalendar" />
-            <p>23.8. 2024</p>
-          </div>
-      </div>
-    </div>
+
+
   </main>
   <footer>
     <div class="konec">
@@ -88,6 +92,7 @@
   </div>
   <script type="module" src="/src/scripts/hamburger.js"></script>
   <script type="module" src="/src/scripts/main.js"></script>
+  <script type="module" src="/src/scripts/swiper.js"></script>
 </body>
 
 </html>

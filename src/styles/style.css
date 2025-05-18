@@ -6,6 +6,7 @@
   color-scheme: light dark;
   --primary: #146219;
   --secondary: #F0E7D5;
+  --swiper-theme-color:black;
 }
 
 
@@ -77,11 +78,18 @@
 }
 
 
+
 .textm{
   color: #146219;
   text-align: center;
   font-size: 2rem;
 }
+
+.ramecky{
+  display: flex;
+  flex-direction: column;
+}
+
 
 .ramecek{
 display: flex;
@@ -191,6 +199,17 @@ border-radius: 2rem;
   margin: 1.5em 0;
 }
 
+.picture{
+  object-position: left; 
+}
+
+.swiper{
+  margin: 1em 8em;
+}
+.swiper-button-prev, .swiper-button-next {
+  color: black;
+}
+
 .konec{
   background-color: var(--secondary);
   padding: .25em;
@@ -199,6 +218,84 @@ border-radius: 2rem;
   color: black;
 }
 
+
+@media (min-width: 1440px) {
+  
+  .header__title{
+    font-size: 2rem;
+  }
+  .menu{
+    font-size: 1.75rem;
+  }
+  .top-nav{
+    background-color: var(--secondary);
+    padding: 1em;
+  }
+  .stred{
+    font-size: 4rem;
+    font-weight: 500;
+  }
+
+  .text{
+    font-size: 1.25rem;
+  }
+
+  .button--hlavni{
+    font-size: 1.35rem;
+  }
+
+  .textm{
+    font-size: 2.5rem;
+  }
+
+  .ramecky{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-left: 1em;    
+  }
+
+  .ramecek{ 
+    width: 100%;
+  }
+
+  .obrazekprace{
+    width: 20.375rem;
+    height: 20.375rem;         
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0.75em;
+    flex-shrink: 0;  
+  }
+
+  .misto{
+    font-size: 1.75rem;
+    width: 17.125rem;
+    margin: 0;
+  }
+
+  .odkaz{
+    font-size: 1.35rem;
+  }
+
+  .datum{
+    font-size: 1rem;
+  }
+
+  .skupina{
+    padding: 0 1em;
+  }
+
+  .formular{
+    margin: 5em 20em;
+  }
+
+  .swiper-slide {
+    display: flex !important;
+    justify-content: space-evenly !important;
+  }
+
+}
 
 
 

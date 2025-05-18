@@ -1,12 +1,13 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper/modules';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 const swiper = new Swiper('.swiper', {
-    modules: [Navigation, Pagination, Scrollbar],
+    modules: [Navigation, Pagination, Scrollbar, Autoplay],
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -15,7 +16,6 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-pagination',
         clickable: true,
     },
-
     scrollbar: {
         el: '.swiper-scrollbar',
         draggable: true,
@@ -24,5 +24,5 @@ const swiper = new Swiper('.swiper', {
     autoplay: {
         delay: 4000,
         disableOnInteraction: true,
-    },  
+    },
 });
