@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/images/leaf.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/styles/style.css">
+  <link rel="stylesheet" href="/src/styles/normalize.css">
+  <link rel="stylesheet" href="/src/styles/hamburger.css">
+  <link rel="stylesheet" href="/src/styles/typography.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ekohrdinové</title>
+</head>
+
+<body>
+  <header>
+    <section class="top-nav">
+      <div>
+        <img class="header__logo" src="/images/leaf.svg" alt="logo" />
+      </div>
+      <div>
+        <h1 class="header__title">Ekohrdinové</h1>
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li><a href="%BASE_URL%index.html">O nás</a></li>
+        <li><a href="%BASE_URL%galerie.html">Galerie</a></li>
+        <li><a href="%BASE_URL%formular.html">Formulář</a></li>
+      </ul>
+    </section>
+  </header>
+
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide picture">
+        <img class="picture__image" src="%BASE_URL%images/galerie1.webp" alt="sazeni stromu">
+      </div>
+      <div class="swiper-slide picture">
+        <img class="picture__image" src="%BASE_URL%images/galerie2.webp" alt="sbirani odpadku">
+      </div>
+      <div class="swiper-slide picture">
+        <img class="picture__image" src="%BASE_URL%images/galerie3.webp" alt="trideni odpadu">
+      </div>
+      <div class="swiper-slide picture">
+        <img class="picture__image" src="%BASE_URL%images/galerie4.webp" alt="sazeni str  omu">
+      </div>
+      <div class="swiper-slide picture">
+        <img class="picture__image" src="%BASE_URL%images/galerie5.webp" alt="zalevani stromu">
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+  <footer>
+    <div class="konec">
+      <p>@2025 Zatloukalová adéla</p>
+    </div>
+  </footer>
+  </div>
+  <script type="module" src="/src/scripts/swiper.js"></script>
+</body>
+
+</html>

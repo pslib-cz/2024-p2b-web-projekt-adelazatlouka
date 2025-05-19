@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/images/leaf.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/styles/style.css">
+  <link rel="stylesheet" href="/src/styles/normalize.css">
+  <link rel="stylesheet" href="/src/styles/hamburger.css">
+  <link rel="stylesheet" href="/src/styles/typography.css">
+  <script src="/src/scripts"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ekohrdinové</title>
+</head>
+
+<body>
+  <header>
+    <section class="top-nav">
+      <div>
+        <img class="header__logo" src="/images/leaf.svg" alt="logo" />
+      </div>
+      <div>
+        <h1 class="header__title">Ekohrdinové</h1>
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li><a href="%BASE_URL%">O nás</a></li>
+        <li><a href="%BASE_URL%galerie.html">Galerie</a></li>
+        <li><a href="%BASE_URL%formular.html">Formulář</a></li>
+      </ul>
+    </section>
+  </header>
+  <main>
+    <div class="obrazekatext">
+      <img class="obrazek" src="%BASE_URL%images/rukaa.webp" alt="ruka" />
+      <div class="stred">Staň se ekohrdinou!</div>
+    </div>
+    <div class="text">
+      <p>Malými každodenními rozhodnutími měníme svět. Třídění odpadu, šetření vodou nebo výsadba stromků – i ty můžeš
+        pomoct.</p>
+    </div>
+    <div class="button--hlavni">
+      <div class="button">
+        <a href="%BASE_URL%formular.html">Zapoj se!</a>
+      </div>
+    </div>
+    <div class="carka">
+    </div>
+    <div class="textm">
+      <p>Co právě děláme?</p>
+    </div>
+    <div class="ramecky">
+      <div class="ramecek">
+        <div class="obrazekprace">
+          <img src="%BASE_URL%images/sazeni.webp" alt="sazeni stromu" />
+        </div>
+        <div class="text">
+          <p class="misto">Výsadba ovocných stromků v Brně</p>
+          <a class="odkaz" href="#">zjistit více</p>
+            <div class="datum">
+              <img class="kalendar" src="%BASE_URL%images/calendar-o.svg" alt="kalendar" />
+             <p>11.2. 2025</p>
+          </div>
+        </div>
+      </div>
+      <div class="ramecek">
+        <div class="obrazekprace">
+          <img src="%BASE_URL%images/uklid.webp" alt="úklid odpadků" />
+        </div>
+        <div class="text">
+          <p class="misto">Úklid parku v Jablonci nad Nisou</p>
+          <a class="odkaz" href="#">zjistit více</p>
+            <div class="datum">
+              <img class="kalendar" src="%BASE_URL%images/calendar-o.svg" alt="kalendar" />
+              <p>23.8. 2024</p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+  <footer>
+    <div class="konec">
+      <p>@2025 Zatloukalová adéla</p>
+    </div>
+  </footer>
+  </div>
+  <script type="module" src="/src/scripts/hamburger.js"></script>
+  <script type="module" src="/src/scripts/main.js"></script>
+  <script type="module" src="/src/scripts/swiper.js"></script>
+</body>
+
+</html>
