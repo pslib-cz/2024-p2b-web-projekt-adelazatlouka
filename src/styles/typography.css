@@ -1,8 +1,0 @@
-a {
-    font-weight: 500;
-    color: var(--color-primary);
-    text-decoration: inherit;
-}
-a:hover {
-color: var(--color-mod);
-}
